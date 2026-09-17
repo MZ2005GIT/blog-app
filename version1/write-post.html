@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Write Post - BlogSpace</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+    <div id="sidebarContainer"></div>
+
+    <main class="main-content">
+
+        <section class="write-post-header">
+
+            <h1>
+                Write a Post
+            </h1>
+
+            <p>
+                Share something with your readers.
+            </p>
+
+        </section>
+
+        <section class="write-post-container">
+
+            <form
+                id="postForm"
+                class="post-form"
+            >
+
+                <div class="form-group">
+
+                    <label for="postTitle">
+                        Title
+                    </label>
+
+                    <input
+                        type="text"
+                        id="postTitle"
+                        name="postTitle"
+                        placeholder="Enter your post title"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="postContent">
+                        Content
+                    </label>
+
+                    <textarea
+                        id="postContent"
+                        name="postContent"
+                        rows="15"
+                        placeholder="Write your post here..."
+                        required
+                    ></textarea>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        Hashtags
+                    </label>
+
+                    <p class="form-help">
+                        Select tags that describe your post.
+                    </p>
+
+
+                    <div class="tag-options">
+
+
+                        <label class="tag-option">
+
+                            <input
+                                type="checkbox"
+                                name="tags"
+                                value="technology"
+                            >
+
+                            <span>
+                                #technology
+                            </span>
+
+                        </label>
+
+
+                        <label class="tag-option">
+
+                            <input
+                                type="checkbox"
+                                name="tags"
+                                value="programming"
+                            >
+
+                            <span>
+                                #programming
+                            </span>
+
+                        </label>
+
+
+                        <label class="tag-option">
+
+                            <input
+                                type="checkbox"
+                                name="tags"
+                                value="gaming"
+                            >
+
+                            <span>
+                                #gaming
+                            </span>
+
+                        </label>
+
+
+                        <label class="tag-option">
+
+                            <input
+                                type="checkbox"
+                                name="tags"
+                                value="education"
+                            >
+
+                            <span>
+                                #education
+                            </span>
+
+                        </label>
+
+
+                        <label class="tag-option">
+
+                            <input
+                                type="checkbox"
+                                name="tags"
+                                value="lifestyle"
+                            >
+
+                            <span>
+                                #lifestyle
+                            </span>
+
+                        </label>
+
+
+                        <label class="tag-option">
+
+                            <input
+                                type="checkbox"
+                                name="tags"
+                                value="travel"
+                            >
+
+                            <span>
+                                #travel
+                            </span>
+
+                        </label>
+
+
+                        <label class="tag-option">
+
+                            <input
+                                type="checkbox"
+                                name="tags"
+                                value="food"
+                            >
+
+                            <span>
+                                #food
+                            </span>
+
+                        </label>
+
+
+                        <label class="tag-option">
+
+                            <input
+                                type="checkbox"
+                                name="tags"
+                                value="personal"
+                            >
+
+                            <span>
+                                #personal
+                            </span>
+
+                        </label>
+
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="customTags">
+                        Add Your Own Tags
+                    </label>
+
+                    <input
+                        type="text"
+                        id="customTags"
+                        name="customTags"
+                        placeholder="e.g. webdevelopment, javascript"
+                    >
+
+                    <p class="form-help">
+                        Separate multiple tags with commas.
+                    </p>
+
+                </div>
+
+
+                <div class="post-actions">
+
+                    <button
+                        type="submit"
+                        class="primary-button"
+                    >
+                        Publish Post
+                    </button>
+
+                </div>
+
+
+            </form>
+
+        </section>
+
+
+    </main>
+
+<script src="js/helpers.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/write-post.js"></script>
+
+
+</body>
+
+</html>

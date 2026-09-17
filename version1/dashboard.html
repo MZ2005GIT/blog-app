@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard - BlogSpace</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+    <div id="sidebarContainer"></div>
+
+    <main class="main-content">
+
+        <section class="dashboard-header">
+
+            <h1>
+                Dashboard
+            </h1>
+
+            <p>
+                Welcome back!
+            </p>
+
+        </section>
+
+        <section class="dashboard-section">
+
+            <div class="blog-overview">
+
+
+                <div class="blog-info">
+
+                    <h3 id="blogName">
+                        Alice's Journal
+                    </h3>
+
+                    <p id="blogBio">
+                        My personal blog about technology,
+                        programming, and everyday life.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <section class="dashboard-section">
+
+            <h2>
+                Overview
+            </h2>
+
+
+            <div class="dashboard-stats">
+
+
+                <div class="stat-card">
+
+                    <h3 id="statPosts">
+                        12
+                    </h3>
+
+                    <p>
+                        Posts
+                    </p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <h3 id="statSubscribers">
+                        124
+                    </h3>
+
+                    <p>
+                        Subscribers
+                    </p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <h3 id="statComments">
+                        48
+                    </h3>
+
+                    <p>
+                        Comments
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <section class="dashboard-section">
+
+        <h2>
+            My Posts
+        </h2>
+
+        <ul
+            id="myBlogPostsContainer"
+            class="my-blog-posts-list"
+        >
+        </ul>
+
+    </section>
+
+    </main>
+    
+<script src="js/helpers.js"></script>
+<script src="js/sidebar.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+
+</html>

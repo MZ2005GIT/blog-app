@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Post - BlogSpace</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+    <div id="sidebarContainer"></div>
+    
+    <main class="main-content">
+
+        <article id="postContainer" class="single-post">
+
+        </article>
+        
+        <section class="comments-section">
+
+            <h2>
+                Comments
+            </h2>
+            <div class="comment-form-container">
+
+            <form id="commentForm" class="comment-form">
+                <div class="form-group">
+
+                    <label for="commentText">
+                        Leave a comment
+                    </label>
+
+                    <textarea
+                        id="commentText"
+                        rows="5"
+                        placeholder="Write your comment..."
+                        required
+                    ></textarea>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="primary-button"
+                >
+                    Post Comment
+                </button>
+            </form>
+            </div>
+
+            <div id="commentsContainer" class="comments-container">
+            </div>
+
+        </section>
+
+    </main>
+<script src="js/helpers.js"></script>
+<script src="js/sidebar.js"></script>
+<script src="js/post.js"></script>
+</body>
+
+</html>

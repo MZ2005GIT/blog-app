@@ -1,0 +1,23 @@
+<div class="post-content">
+    <div class="post-meta">
+        <span>
+            ${formatPostDate(post.createdAt)}
+        </span>
+        <h3 class="post-title">
+            ${post.title}
+        </h3>
+        <span class="blog-title">
+            ${currentBlog.name}
+        </span>
+    </div>
+
+    <div>
+        <p>
+            ${getExcerpt(post.content)}
+        </p>
+        <a href="post.html?id=${post.id}" class="read-more">Read More</a>
+        <div class="post-tags">
+            ${post.tags.map(tag => `<span>${tag}</span>`).join(" ")}
+        </div>
+    </div>
+</div>
